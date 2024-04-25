@@ -1,10 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Link from 'next/link';
-import Navbar from "../components/navbar";
-import Hero from '../components/Hero';
-import Card from '../components/Card';
-import Footer from '../components/Footer';
+import Navbar from "../app/components/Navbar";
+import Hero from "../app/components/Hero"
+import Footer from "../app/components/Footer";
+import Card from "../app/components/Card";
 
 /*
 Tarea para proximo jueves:
@@ -19,6 +18,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
+      <Hero />
+      <Footer />
+      <Card />
     </main>
   );
 }
