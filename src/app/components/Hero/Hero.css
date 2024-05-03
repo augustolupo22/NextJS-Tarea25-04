@@ -1,0 +1,9 @@
+.container{
+    background-color: blue;
+}
+
+.hero_bkg{
+    background-image: url("/Images/fondo.png");
+    height: 500px;
+    width: 100%;
+}
