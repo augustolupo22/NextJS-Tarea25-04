@@ -18,14 +18,14 @@ import FetchGrid from "./components/FetchGrid/FetchGrid";
 const Home = () => {
   const menuItems = [
     { text: "Inicio", link: "https://www.instagram.com/augusto_lupo/" },
-    { text: "Acerca", link: "https://www.instagram.com/augusto_lupo/" },
+    { text: "Sobre nosotros", link: "https://www.instagram.com/augusto_lupo/" },
     { text: "Contacto", link: "https://www.instagram.com/augusto_lupo/" },
   ];
 
 // Hero
   const heroData = {
-    title: "¡Bienvenido a mi página!",
-    description: "Explora mi portafolio",
+    title: "¡BIENVENIDO A MI PÁGINA!",
+    description: "Explorá mi portafolio",
   };
 
 // Cards
@@ -33,17 +33,42 @@ const Home = () => {
     {
       title: "Producto 1",
       description: "Descripción del producto 1",
-      image: "./Images/botin1.jpeg",
+      image: "/Images/botin1.jpeg",
     },
     {
       title: "Producto 2",
-      image: "botin2.jpeg",
+      image: "/Images/botin2.jpeg",
       description: "Descripción del producto 2",
     },
     {
       title: "Producto 3",
-      image: "botin3.jpeg",
+      image: "/Images/botin3.jpeg",
       description: "Descripción del producto 3",
+    },
+    {
+      title: "Producto 4",
+      description: "Descripción del producto 4",
+      image: "/Images/botin1.jpeg",
+    },
+    {
+      title: "Producto 5",
+      image: "/Images/botin2.jpeg",
+      description: "Descripción del producto 5",
+    },
+    {
+      title: "Producto 6",
+      image: "/Images/botin3.jpeg",
+      description: "Descripción del producto 6",
+    },
+    {
+      title: "Producto 7",
+      image: "/Images/botin2.jpeg",
+      description: "Descripción del producto 7",
+    },
+    {
+      title: "Producto 8",
+      image: "/Images/botin3.jpeg",
+      description: "Descripción del producto 8",
     },
   ];
 

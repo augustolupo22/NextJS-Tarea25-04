@@ -1,33 +1,17 @@
-import Styles from "./NavbarContainer.css";
+import styles from "./Navbar.module.css";
 
-/*const Navbar = (props) => {
-  const { title, menu } = props;
+const Navbar = ({ menuItems, logo }) => {
   return (
-    <header className={Styles.container}>
-      <h1>{title}</h1>
-      <nav>
-        <ul>
-          {menu.map((menuItem, index) => (
-            <li key={index}>
-              <a href={menuItem.link}>{menuItem}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  );
-};
-
-export default Navbar;
-*/
-
-const Navbar = ({ menuItems }) => {
-  return (
-    <nav className={Styles.navbarContainer}>
-      <ul>
+    <nav className={styles.container}>
+      <div className={styles.logo}>
+        <img src={"/Images/logo.png"} alt="Logo" className={styles.logoImg} />
+      </div>
+      <ul className={styles.ul}>
         {menuItems.map((menuItem, index) => (
-          <li key={index}>
-            <a href={menuItem.link}>{menuItem.text}</a>
+          <li key={index} className={styles.li}>
+            <a href={menuItem.link} className={styles.link}>
+              {menuItem.text}
+            </a>
           </li>
         ))}
       </ul>
