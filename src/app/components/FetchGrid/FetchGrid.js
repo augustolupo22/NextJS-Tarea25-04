@@ -2,6 +2,7 @@
 
 import { useEffect } from "react"
 import axios from "axios"
+import styles from "./FetchGrid.module.css"
 
 const FetchGrid = () => {
     useEffect(() => {
@@ -16,8 +17,8 @@ const FetchGrid = () => {
     }, [])
 
     return (
-        <div>
-            <p>Fetching data</p>
+        <div className={styles["container"]}>
+            <h1 className={styles["title"]}>Fetching data</h1>
         </div>
     )
 }

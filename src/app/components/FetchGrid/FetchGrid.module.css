@@ -1,0 +1,14 @@
+.container{
+    background-image: linear-gradient(to right, rgba(0, 191, 255, 0.75), rgba(255, 0, 255, 0.5));
+    height: 60%;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.title {
+    font-size: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

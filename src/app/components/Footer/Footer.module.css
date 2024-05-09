@@ -1,0 +1,60 @@
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Para separar las columnas */
+  padding: 0px 250px; /* Ajusta el padding según sea necesario */
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1; /* Para que cada columna ocupe el mismo espacio */
+  margin-bottom: 20px;
+  margin-right: 200px; /* Espacio entre las columnas */
+}
+
+.footer-section:last-child {
+  margin-right: 0; /* No agregar margen a la última columna */
+}
+
+.footer-section h3 {
+  color: rgba(0, 191, 255, 0.75);
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 5px;
+}
+
+.footer-section ul li a {
+  color: #d8d8d8;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: rgba(0, 191, 255, 0.75);
+  border-bottom: 2px solid #ffffff;
+  text-decoration-thickness: 2px; 
+  text-decoration-color: #ffffff;
+}
+
+.p{
+  color: #d8d8d8;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin: 5px;
+}
+

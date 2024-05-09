@@ -31,44 +31,44 @@ const Home = () => {
 // Cards
   const cards = [
     {
-      title: "Producto 1",
-      description: "Descripción del producto 1",
-      image: "/Images/botin1.jpeg",
+      title: "Trabajo 1",
+      description: "Descripción del trabajo 1",
+      image: "/Images/RetratoCara.jpg",
     },
     {
-      title: "Producto 2",
-      image: "/Images/botin2.jpeg",
-      description: "Descripción del producto 2",
+      title: "Trabajo 2",
+      description: "Descripción del trabajo 2",
+      image: "/Images/RetratoCara.jpg",
     },
     {
-      title: "Producto 3",
-      image: "/Images/botin3.jpeg",
-      description: "Descripción del producto 3",
+      title: "Trabajo 3",
+      description: "Descripción del trabajo 3",
+      image: "/Images/RetratoCara.jpg",
     },
     {
-      title: "Producto 4",
-      description: "Descripción del producto 4",
-      image: "/Images/botin1.jpeg",
+      title: "Trabajo 4",
+      description: "Descripción del trabajo 4",
+      image: "/Images/RetratoCara.jpg",
     },
     {
-      title: "Producto 5",
-      image: "/Images/botin2.jpeg",
-      description: "Descripción del producto 5",
+      title: "Trabajo 5",
+      description: "Descripción del trabajo 5",
+      image: "/Images/RetratoCara.jpg",
     },
     {
-      title: "Producto 6",
-      image: "/Images/botin3.jpeg",
-      description: "Descripción del producto 6",
+      title: "Trabajo 6",
+      description: "Descripción del trabajo 6",
+      image: "/Images/RetratoCara.jpg",
     },
     {
-      title: "Producto 7",
-      image: "/Images/botin2.jpeg",
-      description: "Descripción del producto 7",
+      title: "Trabajo 7",
+      description: "Descripción del trabajo 7",
+      image: "/Images/RetratoCara.jpg",
     },
     {
-      title: "Producto 8",
-      image: "/Images/botin3.jpeg",
-      description: "Descripción del producto 8",
+      title: "Trabajo 8",
+      description: "Descripción del trabajo 8",
+      image: "/Images/RetratoCara.jpg",
     },
   ];
 
