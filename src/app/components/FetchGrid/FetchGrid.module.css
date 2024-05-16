@@ -23,6 +23,6 @@
 
   .albums-style:hover {
     color: black;
-    text-shadow: 2px;
     cursor: pointer;
+    font-weight: bold;
   }
