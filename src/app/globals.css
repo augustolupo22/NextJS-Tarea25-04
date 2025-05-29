@@ -57,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('../app/Component/Images/BackgroundHero.png');
+  background-image: url('/Images/BackgroundHero.png');
   background-size: cover;
   background-position: center;
   color: rgb(0, 0, 0);

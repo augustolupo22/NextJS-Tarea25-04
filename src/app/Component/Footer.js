@@ -35,16 +35,16 @@ export default function Footer() {
           <h3>Síguenos</h3>
           <div class="social-icons">
             <a href="#">
-              <Image src="/app/Component/Images/Facebook.png" alt="Facebook" width={32} height={32} />
+              <Image src='/Images/Facebook.png' alt="Facebook" width={32} height={32} />
             </a>
             <a href="#">
-              <Image src="/app/Component/Images/instagram.png" alt="Instagram" width={32} height={32} />
+              <Image src='/Images/instagram.png' alt="Instagram" width={32} height={32} />
             </a>
             <a href="#">
-              <Image src="/app/Component/Images/twitter.png" alt="Twitter" width={32} height={32} />
+              <Image src='/Images/twitter.png' alt="Twitter" width={32} height={32} />
             </a>
             <a href="#">
-              <Image src="/app/Component/Images/youtube.png" alt="YouTube" width={32} height={32} />
+              <Image src='/Images/youtube.png' alt="YouTube" width={32} height={32} />
             </a>
           </div>
         </div>
