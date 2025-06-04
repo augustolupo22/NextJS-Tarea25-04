@@ -1,23 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import styles from "@/app/ver-mas/ver-mas.module.css";
 
 const VerMas = () => {
-  const searchParams = useSearchParams();
-  const [recetaId, setRecetaId] = useState(null);
+  const params = useParams();
+  const recetaId = params.id;
+
   const [receta, setReceta] = useState(null);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    const id = searchParams.get("id");
-    setRecetaId(id);
-  }, [searchParams]);
-
-  useEffect(() => {
     const fetchReceta = async () => {
-      if (!recetaId) return;
+      if (!recetaId) {
+        setError(true);
+        return;
+      }
 
       try {
         const API_URL = `https://dummyjson.com/recipes/${recetaId}`;
@@ -26,7 +25,7 @@ const VerMas = () => {
         setReceta(data);
       } catch (err) {
         setError(true);
-        console.log("Error al cargar la receta:", err);
+        console.error("Error al cargar la receta:", err);
       }
     };
 
@@ -37,7 +36,7 @@ const VerMas = () => {
     window.location.href = "/";
   };
 
-  if (error) return <p className={styles.mensajeCentrado}>Error al cargar la receta.</p>;
+  if (error) return <p>Error al cargar la receta.</p>;
   if (!receta) return <p className={styles.mensajeCentrado}>Cargando...</p>;
 
   return (

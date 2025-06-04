@@ -26,7 +26,7 @@ const RecipeGrid = () => {
   }, []);
 
   const verReceta = (id) => {
-    window.location.href = `/ver-mas?id=${id}`;
+    window.location.href = `/ver-mas/${id}`;
   };
 
   return (
