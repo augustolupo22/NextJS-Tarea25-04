@@ -26,7 +26,7 @@ const RecipeGrid = () => {
   }, []);
 
   const verReceta = (id) => {
-    window.location.href = `recipe.html?id=${id}`;
+    window.location.href = `/ver-mas?id=${id}`;
   };
 
   return (
@@ -39,7 +39,7 @@ const RecipeGrid = () => {
           <button onClick={() => verReceta(recipe.id)}>Ver más</button>
         </div>
         ))}
-        {loading && "LOADING..."}
+        {loading && "Cargando..."}
     </div>
   );
 };

@@ -1,0 +1,70 @@
+.btn-volver {
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-volver:hover {
+  background-color: #c82333;
+}
+
+.detalle {
+  max-width: 800px;
+  margin: 10px auto 10px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.nombre {
+  font-size: 28px;
+  color: #007bff;
+}
+
+.receta-imagen {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.receta-nombre {
+  color: #007bff;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.receta-ingredientes {
+  list-style: none;
+  padding: 0;
+}
+
+.receta-ingredientes li {
+  padding: 8px;
+  background: #e9ecef;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.receta-pasos {
+  background: #d4edda;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 5px solid #28a745;
+  text-align: left;
+}
+
+.mensajeCentrado {
+  text-align: center;
+}
+
