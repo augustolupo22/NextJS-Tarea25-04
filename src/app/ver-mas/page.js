@@ -6,17 +6,18 @@ import styles from "@/app/ver-mas/ver-mas.module.css";
 
 const VerMas = () => {
   const searchParams = useSearchParams();
-  const recetaId = searchParams.get("id");
-
+  const [recetaId, setRecetaId] = useState(null);
   const [receta, setReceta] = useState(null);
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    const id = searchParams.get("id");
+    setRecetaId(id);
+  }, [searchParams]);
+
+  useEffect(() => {
     const fetchReceta = async () => {
-      if (!recetaId) {
-        setError(true);
-        return;
-      }
+      if (!recetaId) return;
 
       try {
         const API_URL = `https://dummyjson.com/recipes/${recetaId}`;
@@ -36,14 +37,18 @@ const VerMas = () => {
     window.location.href = "/";
   };
 
-  if (error) return <p>Error al cargar la receta.</p>;
-  if (!receta) return <p className={styles.mensajeCentrado}>Cargando...</p>
-;
+  if (error) return <p className={styles.mensajeCentrado}>Error al cargar la receta.</p>;
+  if (!receta) return <p className={styles.mensajeCentrado}>Cargando...</p>;
 
   return (
     <div className={styles.detalle}>
       <h1 className={styles.nombre}>{receta.name}</h1>
-      <img className={styles["receta-imagen"]} src={receta.image} alt={receta.name} width="300" />
+      <img
+        className={styles["receta-imagen"]}
+        src={receta.image}
+        alt={receta.name}
+        width="300"
+      />
 
       <h3 className={styles["receta-nombre"]}>Ingredientes</h3>
       <ul className={styles["receta-ingredientes"]}>
@@ -55,7 +60,9 @@ const VerMas = () => {
       <h3 className={styles["receta-nombre"]}>Instrucciones</h3>
       <p className={styles["receta-pasos"]}>{receta.instructions.join(" ")}</p>
 
-      <button className={styles["btn-volver"]} onClick={volverAInicio}>Volver al inicio</button>
+      <button className={styles["btn-volver"]} onClick={volverAInicio}>
+        Volver al inicio
+      </button>
     </div>
   );
 };
